@@ -1,0 +1,931 @@
+  {{!-- ///////////////////////////////// --}}
+  
+  
+<div id="modal-content">
+      <div class="iq-subscribe pattern-left pt-0 pb-0 container position-relative" id="iq-subscribe">
+        <div class="pattern-right">
+          <div class="row align-items-center">
+              <div class="title-box text-left ">
+                <p class="text-white iq-fw-4 mb-0">Отправьте свой номер и мы с вами свяжемся</p>
+              </div>
+            </div>
+      
+                <form action="/phone?_csrf={{csrf}}" method="post" class="position-relative subscribe-form mt-5 mt-lg-0">
+                    <input type="hidden" name="_csrf" value="{{csrf}}">
+                <div class="form-group mb-0">
+                  <input type="text" class="form-control position-relative subscription-email  mb-0" name="phone" placeholder="Оставьте свой номер">
+                </div>
+                <a class="slide-button button bt-subscribe subscription-button " href="javascript:void(0)">
+                <button type="submit" class="slide-button button contact-us-button first" >Отправить</button>
+                </a>
+              </form>
+            </div>
+        
+      </div>
+                <a id="modal-close" href="#close">Скрыть</a>
+</div>
+    <style>
+      #modal-content {
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    background: #7c60d5;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px; 
+    border: 4px solid #33e2a0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+#modal-close {
+    display: inline-block;
+    margin: 10px 6px 4px 6px;
+    text-decoration: none;
+    position: relative;
+    font-size: 12px;
+    padding: 0px 7px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background: #33e2a0;
+    border-radius: 10px;
+}
+#modal-close:hover {
+    color: #FFF;
+}
+#modal-close:after,
+#modal-close:before {
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    background: #33e2a0;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+#modal-close:before {
+    top: -6px;
+}
+#modal-close:hover:after,
+#modal-close:hover:before {
+    width: 100%;
+    left: 0;
+}
+    </style>
+
+    <script>
+      
+
+setTimeout(function(){ 
+    modalwin = document.getElementById('modal-content');
+    modalwin.style.display="block"; 
+    document.getElementById("modal-close").addEventListener("click", function(){
+        modalwin.style.display="none";            
+    });
+}, 15000);
+    </script>
+    {{!-- ///////////////////////////////////////// --}}
+  <div class="iq-banner">
+      <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="marketive-1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+      <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
+      <div id="rev_slider_3_1" class="rev_slider fullwidthabanner tp-overflow-hidden" style="display:none;" data-version="5.2.6">
+        <ul>  <!-- SLIDE  -->
+        <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="600"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+          <!-- MAIN IMAGE -->
+          <img src="front/revslider/assets/02f6c-bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+          <!-- LAYERS -->
+          <!-- LAYER NR. 1 -->
+          <h1 class="tp-caption   tp-resizeme"
+          id="slide-2-layer-14"
+          data-x="29"
+          data-y="center" data-voffset="-105"
+          data-width="['auto']"
+          data-height="['auto']"
+          data-transform_idle="o:1;"
+
+          data-transform_in="x:50px;opacity:0;s:1000;e:Power4.easeInOut;"
+          data-transform_out="opacity:0;s:300;"
+          data-start="500"
+          data-splitin="none"
+          data-splitout="none"
+          data-responsive_offset="on"
+
+          style="z-index: 5; white-space: nowrap; font-size: 60px; line-height: 70px; font-weight: 700; color: rgba(27, 14, 61, 1.00);font-family:Nunito;">Создание веб-сайтов <br> в Узбекистане   </h1>
+          <!-- LAYER NR. 2 -->
+          <p class="tp-caption   tp-resizeme"
+            id="slide-2-layer-2"
+            data-x="30"
+            data-y="center" data-voffset="22"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 32px; font-weight: 400; color: rgba(134, 136, 148, 1.00);font-family:Poppins;">Делаем сайты, которые работают</p>
+          <!-- LAYER NR. 3 -->
+          <div class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready"
+            id="slide-2-layer-4"
+            data-x="29"
+            data-y="480"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:0;e:Linear.easeNone;"
+            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(124, 96, 213, 1.00);"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;e:Back.easeIn;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 50px;height:auto; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Nunito;padding:0px 35px 0px 35px;border-color:rgba(0, 0, 0, 1.00);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="/contact">СВЯЖИТЕСЬ С НАМИ</a> </div>
+          <!-- LAYER NR. 4 -->
+          <span class="tp-caption   tp-resizeme"
+            id="slide-2-layer-13"
+            data-x="31"
+            data-y="538"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 8; white-space: nowrap; font-size: 12px; line-height: 32px; font-weight: 400; color: rgba(134, 136, 148, 1.00);font-family:Poppins;">* Начните Свой Проект С Нами Уже сегодня!</span>
+          <!-- LAYER NR. 5 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-5"
+            data-x="727"
+            data-y="166"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1020"
+            data-responsive_offset="on"
+
+          style="z-index: 9;"><img src="front/revslider/assets/edad9-08.png" alt="" data-ww="636px" data-hh="411px" data-no-retina> </div>
+          <!-- LAYER NR. 6 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-7"
+            data-x="895"
+            data-y="238"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;e:Back.easeIn;"
+            data-start="1350"
+            data-responsive_offset="on"
+
+          style="z-index: 10;"><img src="front/revslider/assets/69d21-04.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 7 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-8"
+            data-x="1045"
+            data-y="235"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;e:Back.easeIn;"
+            data-start="1360"
+            data-responsive_offset="on"
+
+          style="z-index: 11;"><img src="front/revslider/assets/77014-05.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 8 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-9"
+            data-x="1196"
+            data-y="231"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;e:Back.easeIn;"
+            data-start="1390"
+            data-responsive_offset="on"
+
+          style="z-index: 12;"><img src="front/revslider/assets/7ae95-06.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 9 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-17"
+            data-x="858"
+            data-y="330"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2620"
+            data-responsive_offset="on"
+
+          style="z-index: 13;"><img src="front/revslider/assets/b2422-10.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 10 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-15"
+            data-x="798"
+            data-y="491"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1880"
+            data-responsive_offset="on"
+
+          style="z-index: 14;"><img src="front/revslider/assets/bc86e-12.png" alt="" data-ww="537px" data-hh="250px" data-no-retina> </div>
+          <!-- LAYER NR. 11 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-16"
+            data-x="1128"
+            data-y="353"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2360"
+            data-responsive_offset="on"
+
+          style="z-index: 15;"><img src="front/revslider/assets/b1482-09.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 12 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-2-layer-18"
+            data-x="764"
+            data-y="342"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2750"
+            data-responsive_offset="on"
+
+          style="z-index: 16;"><img src="front/revslider/assets/b33c3-11.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+        </li>
+        <!-- SLIDE  -->
+       
+        <!-- SLIDE  -->
+        <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+          <!-- MAIN IMAGE -->
+          <img src="front/revslider/assets/02f6c-bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+          <!-- LAYERS -->
+          <!-- LAYER NR. 1 -->
+          <h1 class="tp-caption   tp-resizeme"
+          id="slide-4-layer-14"
+          data-x="30"
+          data-y="center" data-voffset="-100"
+          data-width="['auto']"
+          data-height="['auto']"
+          data-transform_idle="o:1;"
+
+          data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeInOut;"
+          data-transform_out="s:300;"
+          data-start="490"
+          data-splitin="none"
+          data-splitout="none"
+          data-responsive_offset="on"
+
+          style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(27, 14, 61, 1.00);font-family:Nunito;">Запустим сайт,  пока <br>  вы занимаетесь бизнесом </h1>
+          <!-- LAYER NR. 2 -->
+          <p class="tp-caption   tp-resizeme"
+            id="slide-4-layer-2"
+            data-x="34"
+            data-y="center" data-voffset="28"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 32px; font-weight: 400; color: rgba(134, 136, 148, 1.00);font-family:Poppins;">Увеличитe свою производительность и <br> расширьте клиентскую базу.  </p>
+          <!-- LAYER NR. 3 -->
+          <div class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready"
+            id="slide-4-layer-4"
+            data-x="33"
+            data-y="center" data-voffset="120"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:0;e:Linear.easeNone;"
+            data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(124, 96, 213, 1.00);"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;e:Back.easeIn;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 50px; height:auto;font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Nunito;padding:0px 35px 0px 35px;border-color:rgba(0, 0, 0, 1.00);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="/contact">СВЯЖИТЕСЬ С НАМИ</a> </div>
+          <!-- LAYER NR. 4 -->
+          <span class="tp-caption   tp-resizeme"
+            id="slide-4-layer-13"
+            data-x="30"
+            data-y="center" data-voffset="170"
+            data-width="['auto']"
+            data-height="['auto']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+
+          style="z-index: 8; white-space: nowrap; font-size: 12px; line-height: 32px; font-weight: 400; color: rgba(134, 136, 148, 1.00);font-family:Poppins;">*Начните Свой Проект С Нами Уже сегодня! </span>
+          <!-- LAYER NR. 5 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-15"
+            data-x="737"
+            data-y="165"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1670"
+            data-responsive_offset="on"
+
+          style="z-index: 9;"><img src="front/revslider/assets/17ea3-01.png" alt="" data-ww="628px" data-hh="405px" data-no-retina> </div>
+          <!-- LAYER NR. 6 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-17"
+            data-x="892"
+            data-y="254"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:1000;e:Power3.easeOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 10;"><img src="front/revslider/assets/69d21-04.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 7 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-18"
+            data-x="1028"
+            data-y="255"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 11;"><img src="front/revslider/assets/77014-05.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 8 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-19"
+            data-x="1174"
+            data-y="252"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:1000;e:Power3.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 12;"><img src="front/revslider/assets/7ae95-06.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 9 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-20"
+            data-x="1179"
+            data-y="375"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:980;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 13;"><img src="front/revslider/assets/69d21-04.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 10 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-22"
+            data-x="893"
+            data-y="378"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 14;"><img src="front/revslider/assets/242a2-08.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 11 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-23"
+            data-x="1033"
+            data-y="377"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="2040"
+            data-responsive_offset="on"
+
+          style="z-index: 15;"><img src="front/revslider/assets/7ae95-06.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+          <!-- LAYER NR. 12 -->
+          <div class="tp-caption   tp-resizeme rs-parallaxlevel-1"
+            id="slide-4-layer-24"
+            data-x="727"
+            data-y="377"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1690"
+            data-responsive_offset="on"
+
+          style="z-index: 16;"><img src="front/revslider/assets/a805a-11.png" alt="" data-ww="217px" data-hh="328px" data-no-retina> </div>
+          <!-- LAYER NR. 13 -->
+          <div class="tp-caption   tp-resizeme rs-parallaxlevel-1"
+            id="slide-4-layer-25"
+            data-x="1144"
+            data-y="388"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1690"
+            data-responsive_offset="on"
+
+          style="z-index: 17;"><img src="front/revslider/assets/b3bdd-12.png" alt="" data-ww="225px" data-hh="311px" data-no-retina> </div>
+          <!-- LAYER NR. 14 -->
+          <div class="tp-caption   tp-resizeme"
+            id="slide-4-layer-27"
+            data-x="1027"
+            data-y="495"
+            data-width="['none','none','none','none']"
+            data-height="['none','none','none','none']"
+            data-transform_idle="o:1;"
+
+            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1000;e:Power4.easeOut;"
+            data-transform_out="opacity:0;s:300;"
+            data-start="1910"
+            data-responsive_offset="on"
+
+          style="z-index: 18;"><img src="front/revslider/assets/64173-15.png" alt="" data-ww="59px" data-hh="37px" data-no-retina> </div>
+        </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div> </div>
+    </div>
+    </div>
+ <div class="main-content">
+      <!-- Works -->
+      <section class="iq-works main-bg position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="section-title">
+                <p class="mt-2 text-uppercase text-white iq-fw-3 iq-ls-3">Это идеальный способ начать бизнес</p>
+                <h2 class="title text-white  iq-fw-8">Как мы работаем</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 text-center">
+              <div class="iq-workinfo">
+                <div class="service-shap  mb-4 iq-rmt-40">
+                  <img src="front/images/work/01.png" class="img-fluid " alt="">
+                </div>
+                <h3 class="title text-white">1. Планирование</h3>
+                {{!-- <span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">сделать тебя другим</span> --}}
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="iq-workinfo">
+                <div class="service-shap  mb-4 iq-rmt-40">
+                  <img src="front/images/work/02.png" class="img-fluid " alt="">
+                </div>
+                <h3 class="title text-white">2. Развитие</h3>
+                {{!-- <span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">make you different</span> --}}
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="iq-workinfo">
+                <div class="service-shap  mb-4 iq-rmt-40">
+                  <img src="front/images/work/03.png" class="img-fluid " alt="">
+                </div>
+                <h3 class="title text-white">3. Запуск</h3>
+                {{!-- <span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">make you different</span> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="iq-way">
+          <img src="front/images/work/2.png" class="img-fluid"  alt="image">
+        </div>
+      </section>
+      <!-- Works END -->
+      {{!-- <div class="iq-video overview-block-pb position-relative">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="position-relative">
+                <img  src="front/images/video/2.png" class="img-fluid w-100" alt="">
+                <div class="waves-box">
+                  <a href="https://www.youtube.com/watch?v=d1FjiE0fHDw" class="video-play  popup-youtube" ><i class="fas fa-play"></i></a>
+                  <div class="iq-waves">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    <div class="waves wave-3"></div>
+                  </div>
+                </div>
+                <div class="video-people">
+                  <div class="scrollme">
+                    <img src="front/images/video/1.png" class="img-fluid one animateme"
+                    data-when="span"
+                    data-from="1"
+                    data-to="0"
+                    data-translatex="-300" alt="image">
+                  </div>
+                  <div class="scrollme">
+                    <img src="front/images/video/3.png" class="img-fluid two animateme"
+                    data-when="span"
+                    data-from="1"
+                    data-to="0"
+                    data-translatex="300" alt="image">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div> --}}
+      <!-- Choose From  -->
+      <section class="iq-choose-info">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-lg-6 align-self-center text-center">
+              <img src="front/images/others/3.png" class="img-responsive img-fluid wow fadeInRight" id="img" alt="image">
+            </div>
+            <div class="col-lg-6 align-self-center img-fluid wow fadeInLeft">
+              <h2 class="iq-fw-8 mb-2 iq-mt-40">Комплексное продвижение сайта</h2>
+              <p class="mb-3">Самый важный для нас KPI — рост вашего бизнеса и числа продаж через интернет.</p>
+
+              <ul class="iq-project-info">
+                <li>
+                  <div class="media service-info mt-0 mb-0">
+                    <div class="service-shap"><i class="ion-ios-world-outline"></i></div>
+                    <div class="media-body ml-3">
+                      <h5 class="mt-0 mb-2 iq-fw-8">Веб-праграмиривания</h5>
+                      <p class="mb-0">Корпоративный сайт
+                          Уникальный современный UX/UI дизайн
+                          Разработка продающих целевых страниц
+                          Внедрение каталогов, компонентов и виджетов
+                          Многостраничный сайт</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media service-info mt-0 mb-0">
+                    <div class="service-shap"><i class="ion-ios-pie-outline"></i></div>
+                    <div class="media-body ml-3">
+                      <h5 class="mt-0 mb-2 iq-fw-8">SMM ПРОДВИЖЕНИЕ</h5>
+                      <p class="mb-0">Эффективные услуги по продвижению в социальных сетях от лидера рынка интернет-рекламы</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Choose From END -->
+      <!-- Choose From  -->
+      {{!-- <section class="iq-solutions position-relative iq-rmt-40">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-lg-6 align-self-center wow fadeInRight">
+              <h2 class="iq-fw-8 mb-2">Контент-маркетинг (content marketing)</h2>
+              <p class="mb-3">это маркетинг, главный инструмент которого –  контент, направленный на формирование и увеличение доверия со стороны потребителя. Контент-маркетинг работает на то, чтобы постепенно и органично превращать целевую аудиторию в аудиторию, аудиторию – в читателей, читателей – в покупателей, а покупателей – в повторных покупателей. В общем, контент-маркетинг помогает построить долгие и дружеские отношения c аудиторией.</p>
+
+           
+            </div>
+            <div class="col-lg-6 text-center wow fadeInLeft">
+              <img src="front/images/others/2.jpg" class="img-fluid iq-rmt-40" alt="image">
+            </div>
+          </div>
+        </div>
+      </section> --}}
+      <!-- Choose From END -->
+      <!-- Project  -->
+      <section class="iq-project position-relative pt-0">
+        <div class="scrollme">
+          <img src="front/images/others/13.png" class="img-fluid project-overlay-left animateme"
+          data-when="enter"
+          data-from="0.5"
+          data-to="0"
+          data-translatey="100" alt="image">
+        </div>
+        <div class="container">
+          <div class="row mb-3 align-items-center">
+            <div class="col-lg-6 ">
+              <h2  class="display-2  iq-fw-9 d-inline-block title"><span class="counter">15</span> <sup class=" d-inline-block">+</sup></h2>
+              <h3 class="d-inline-block  iq-fw-8">Проект завершен..</h3>
+            </div>
+            <div class="col-lg-6 ">
+              {{!-- <a class="slide-button button float-right explore-btn" href="/portfolio">
+                <div class="first">Исследуйте все</div>
+                <div class="second">Исследуйте все</div>
+              </a> --}}
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="portfolio-carousel" class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/1.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию </span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/2.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/3.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/4.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/1.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/2.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/3.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="iq-portfolio">
+                    <img src="front/images/project/4.png" class="img-fluid" alt="image">
+                    {{!-- <div class="portfolio-info">
+                      <a href="/portfolio"><span class="text-black">Изучите концепцию</span></a>
+                      <a href="/portfolio" class="text-uppercase text-gray float-right">Проект</a>
+                    </div> --}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project END -->
+      <!-- Works -->
+      <section class="iq-works position-relative pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="section-title">
+                <p class="mt-2 text-uppercase iq-fw-3 iq-ls-3">Лучшие в мире услуги</p>
+                <h2 class="title  iq-fw-8">Наши сервисы для продвижения</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="services purple " >
+                <div class="services-info">
+                  <div class="service-shap purple"><i class="ion-ios-cloud-download-outline"></i></div>
+                  <h5 class="float-left mt-4">Создания телеграм ботов</h5>
+                  <div class="clearfix"></div>
+                  <p class="mt-3 mb-0">Создать Телеграм бота значит получить виртуального помощника, который может выполнять те же действия, что и пользователь. Для бизнеса это экономия времени в обработке потока информации, обращений и обратной связи с клиентами. Такой виртуальный помощник упростит работу наемных сотрудников и владельцев компаний. Для правильной и бесперебойной работы алгоритма доверяйте его создание специалистам.</p>
+                </div>
+                {{!-- <a href="/service" class="button-info">Read More <span class="float-right">. . .</span></a> --}}
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="services purple " >
+                <div class="services-info">
+                  <div class="service-shap purple"><i class="ion-ios-bookmarks-outline"></i></div>
+                  <h5 class="float-left mt-4">Поддержка сайтов</h5>
+                  <div class="clearfix"></div>
+                  <p class="mt-3 mb-0">Мы берем на себя все вопросы по функционированию сайта, продлению доменного имени, работе хостинга, обновлению информации. Поддержка оказывается в рамках разработанных тарифов с подключением Личного кабинета.</p>
+                </div>
+                {{!-- <a href="/service" class="button-info">Read More <span class="float-right">. . .</span></a> --}}
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="services purple mb-lg-0 " >
+                <div class="services-info">
+                  <div class="service-shap purple"><i class="ion-ios-pie-outline"></i></div>
+                  <h5 class="float-left mt-4">SMM или продвижение в <br>социальных сетях</h5>
+                  <div class="clearfix"></div>
+                  <p class="mt-3 mb-0">Успешно оказываем услуги по разработке и ведению рекламных кампаний в социальных сетях ВКонтакте, Facebook, Одноклассники, Instagram, YouTube и других</p>
+                </div>
+                {{!-- <a href="/service" class="button-info">Read More <span class="float-right">. . .</span></a> --}}
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="services purple mb-lg-0" >
+                <div class="services-info">
+                  <div class="service-shap purple"><i class="ion-ios-world-outline"></i></div>
+                  <h5 class="float-left mt-4">Создание сайтов</h5>
+                  <div class="clearfix"></div>
+                  <p class="mt-3 mb-0">Наша команда разрабатывает сайты любого типа сложности от landing page до мультифункциональных информационных сервисов используя комплексный подход: Аналитика, UX/UI, Front-end, Back-end.</p>
+                </div>
+                {{!-- <a href="/service" class="button-info">Read More <span class="float-right">. . .</span></a> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="front/images/others/16.png" class="img-fluid iqwork-two" alt="image">
+      </section>
+      <!-- Works END -->
+      <!-- Our Clients -->
+      <section class="iq-ourclients iq-rmt-40">
+        <div class="scrollme">
+          <img src="front/images/service/1.png"  class="img-fluid service-one animateme"
+          data-when="enter"
+          data-from="0.5"
+          data-to="0"
+          data-translatey="500" alt="image">
+        </div>
+        {{!-- <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="section-title">
+                <p class="mt-2 text-uppercase iq-fw-3 iq-ls-3">Свидетельство</p>
+                <h2 class="title  iq-fw-8">Наши мотиваторы</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="testimonial-slider" class="owl-carousel owl-theme owl-loaded iq-mt-50" data-dots="true" data-nav="true" data-items="1" data-xs-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-autoplay="true">
+                <div class="testimonial-box">
+                  <img src="front/images/testimonials/01.jpg" class="img-fluid mb-3 img-shap " alt="">
+                  <p class="description">
+                    Джефф Безос, основатель интернет-гиганта Amazon, считает, что самая главная вещь в бизнесе — это полностью сфокусироваться на клиенте. Он так и говорит: «Наша цель — быть наиболее клиент-ориентированной компанией на всей планете».
+                  </p>
+                  <h6>Джефф Безос <span><strong class="text-black"></strong></span></h6>
+                </div>
+                <div class="testimonial-box">
+                  <img src="front/images/testimonials/02.jpg" class="img-fluid mb-3 img-shap " alt="">
+                  <p class="description">
+                    Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                  </p>
+                  <h6>Kips Leo <span><strong class="text-black"></strong><span class="iq-fw-4 ml-0"> Markethon</span></span></h6>
+                </div>
+                <div class="testimonial-box">
+                  <img src="front/images/testimonials/03.jpg" class="img-fluid mb-3 img-shap " alt="">
+                  <p class="description">
+                    Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                  </p>
+                  <h6>Haris Morgan <span><strong class="text-black">CEO -</strong><span class="iq-fw-4 ml-0"> Markethon</span></span></h6>
+                </div>
+              
+                <div class="testimonial-box">
+                  <img src="front/images/testimonials/07.jpg" class="img-fluid mb-3 img-shap " alt="">
+                  <p class="description">
+                    Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                  </p>
+                  <h6>Haris Morgan <span><strong class="text-black">CEO -</strong><span class="iq-fw-4 ml-0"> Markethon</span></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+      </section>
+
+      <!-- Our Blog -->
+  
+      <!-- Our Blog END -->
+      {{!-- <div class="iq-clients overview-block-ptb w-100  pt-0 d-inline-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="section-title">
+                <p class="mb-0 text-uppercase iq-fw-5 iq-ls-2">our partners</p>
+                <h2 class="title iq-fw-8">Customers who love us</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="clients-slider" class="owl-carousel owl-theme owl-loaded " data-dots="false" data-nav="false" data-items="5" data-items-laptop="5" data-items-tab="4" data-items-mobile="3" data-items-mobile-sm="2" data-autoplay="true" data-margin="30">
+              <div class="clients-box">
+                <img src="front/images/clients/9.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/10.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/11.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/12.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/9.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/10.png" class="img-fluid " alt="">
+              </div>
+              <div class="clients-box">
+                <img src="front/images/clients/11.png" class="img-fluid " alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> --}}
+
+    </div>

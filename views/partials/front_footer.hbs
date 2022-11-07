@@ -1,0 +1,75 @@
+<footer class="footer-one footer-bg  position-relative">
+      <img src="front/images/footer/4.png" class="img-fluid fshap-after" alt="image">
+      <div class="iq-subscribe pattern-left  container position-relative" id="iq-subscribe">
+        <div class="pattern-right">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <div class="title-box text-left ">
+                <h2 class="title mb-3 text-white">СВЯЖИТЕСЬ С НАМИ</h2>
+                <p class="text-white iq-fw-4 mb-0">Отправьте свой номер и мы с вами свяжемся</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <form action="/phone?_csrf={{csrf}}" method="post" class="position-relative subscribe-form mt-5 mt-lg-0">
+                    <input type="hidden" name="_csrf" value="{{csrf}}">
+                <div class="form-group mb-0">
+                  <input type="text" class="form-control position-relative subscription-email  mb-0" name="phone" placeholder="Оставьте свой номер">
+                </div>
+                <a class="slide-button button bt-subscribe subscription-button " href="javascript:void(0)">
+                <button type="submit" class="slide-button button contact-us-button first" >Отправить</button>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contactinfo">
+        <div class="container p-0">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6">
+              <div class="iq-footer-logo">
+                <a href="/"><img src="front/images/footer/logo.png" width="250px" class="img-fluid" alt="image"></a>
+              </div>
+              <div>
+                <div class="social-media d-inline-block float-left ml-4">
+              <div class="footer-copyright mb-4 iq-fw-5 mt-3">©Copyrights 2022 SoftMakon</div>
+                  <ul class="social">
+                    
+                  </ul>
+                </div>
+              
+              </div>
+            
+            </div>
+            <div class="col-lg-4 col-md-6 footer-link">
+              <h5 class="iq-fw-7 riq-mt-40">Ссылки</h5>
+              <ul class="list-inline rmb-40">
+                <li class="list-item"><a href="/">Главная страна</a></li>
+                {{!-- <li class="list-item"><a href="/about">О нас</a></li> --}}
+                {{!-- <li class="list-item"><a href="/service">Услуги</a></li> --}}
+                <li class="list-item"><a href="/contact">Свяжитесь с нами </a></li>
+              </ul>
+            </div>
+             <div class="col-lg-2 col-md-6 footer-link">
+                <div class="contact mt-4 d-inline-block">
+                <a href="tel:0123456789"> <i class="fa fa-phone"></i><span class="iq-fw-5">(94)6140194</span></a>
+                <div class="email "><a href="Mail:nodirbekmarasulov1@gmail.com">SoftMakon@mail.ru</a></div>
+              </div>
+              
+              {{!-- <h5 class="iq-fw-7 ">Информация</h5>
+              <ul class="list-inline"> --}}
+                {{!-- <li class="list-item"><a href="/clients">Наши клиенты</a></li> --}}
+                {{!-- <li class="list-item"><a href="/portfolio">Портфолио</a></li> --}}
+                {{!-- <li class="list-item"><a href="/privacy">Политика Конфиденциальности</a></li> --}}
+                {{!-- <li class="list-item"><a href="/team">Команда</a></li> --}}
+              {{!-- </ul>
+            </div> --}}
+          </div>
+        </div>
+      </div>
+      <!-- back-to-top -->
+      <div id="back-to-top">
+        <a class="top" id="top" href="#top"><i class="ion-ios-arrow-thin-up"></i></a>
+      </div>
+      <!-- back-to-top End -->
+    </footer>
